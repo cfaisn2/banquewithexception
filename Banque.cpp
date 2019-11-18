@@ -56,6 +56,7 @@ void Banque::interaction() {
 
     switch (saisie)
     {
+
         case 1:
             while(true) {
                 try {
@@ -87,7 +88,9 @@ void Banque::interaction() {
 
         default:
             cout<<"entrée invalide"<<endl;
-            interaction();
+            cin.clear();
+            cin.ignore(10000,'\n');
+           break;
 
     }
 
